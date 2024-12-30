@@ -1,0 +1,194 @@
+.footer{
+    border-top: 1px solid #262626;
+    padding-left: 80px ;
+    padding-right: 80px ;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Two columns: 1 fraction for column 1, 2 fractions for column 2 */
+    grid-template-rows: 1fr 1fr;  /* Two rows of equal height */
+    grid-column-gap: 40px; /* Column gap */
+    grid-row-gap: 5px; /* Row gap */
+    font-size: 14px;
+    color: #999999;
+    box-shadow: 0 -1px 6px #262626;
+    cursor: default;
+}
+  
+.logo {
+grid-column: 1;
+grid-row: 1;
+/* background-color: lightblue; */
+padding: 10px;
+}
+
+.buttons {
+grid-column: 1;
+grid-row: 2;
+/* background-color: lightgreen; */
+padding: 10px;
+}
+
+.menu {
+grid-column: 2; /* Spans the second column */
+grid-row: 1 / span 2; /* Spans both rows */
+/* background-color: lightcoral; */
+padding: 10px;
+}
+
+
+  .footer-images{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: left;
+  }
+  .insta{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-images img{
+    height: 100%;
+  }
+
+.download-btns{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #262626;
+    padding-top: -10px;
+    padding-bottom: 30px;
+}
+
+.store{
+    border: 1px solid #262626;
+    border-radius: 30px;
+    padding:0 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(63.68deg, #ADA785 0%, #D6D3C2 100%); /* Highlighted text color */
+    -webkit-background-clip: text;
+    transition: color 0.3s ease-in-out;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu li{
+  list-style: none;
+  padding: 5px 0;
+  color: #999999;
+}
+.menu-lists{
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    justify-content: left;
+}
+
+.pad{
+  padding-bottom: 48px;
+}
+
+.menu-credit{
+  display: flex;
+  justify-content: space-between;
+}
+
+.credits{
+  padding: 25px 60px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+      padding: 20px; /* Adjust padding for mobile */
+      display: grid;
+      grid-template-columns: 1fr; /* Single-column layout for mobile */
+      grid-template-rows: auto; /* Rows adjust to content */
+      grid-column-gap: 0; /* No column gap for single column */
+      grid-row-gap: 15px; /* Add spacing between rows */
+      height: auto; /* Allow height to adapt */
+      font-size: 12px; /* Smaller font size for mobile */
+      text-align: center; /* Center-align footer content */
+  }
+
+  .logo {
+      grid-column: 1;
+      grid-row: 1;
+      text-align: center; /* Center align logo */
+      padding-bottom: 10px; /* Add space below logo */
+  }
+
+  .buttons {
+      grid-column: 1;
+      grid-row: 2;
+      text-align: center; /* Center align buttons */
+      padding: 10px 0; /* Adjust padding */
+  }
+
+  .menu {
+      grid-column: 1;
+      grid-row: 3;
+      padding: 0; /* Remove unnecessary padding */
+      display: flex;
+      flex-direction: column; /* Stack menu items vertically */
+      align-items: center; /* Center-align menu items */
+      gap: 10px; /* Add spacing between menu items */
+  }
+
+  .footer-images {
+      display: flex;
+      gap: 10px; /* Reduce gap between images */
+      align-items: center;
+      justify-content: center; /* Center-align images */
+      padding-top: 15px; /* Add spacing above images */
+  }
+
+  .insta {
+      gap: 10px; /* Reduce gap for icons */
+      justify-content: center; /* Center-align icons */
+  }
+
+  .download-btns {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 10px; /* Add spacing between buttons */
+      padding: 15px 0; /* Adjust padding */
+      justify-content: center; /* Center-align buttons */
+  }
+
+  .store {
+      padding: 10px 20px; /* Adjust padding for smaller screens */
+      font-size: 12px; /* Adjust font size */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .menu-lists {
+      flex-direction: column; /* Stack menu lists vertically */
+      gap: 10px; /* Add spacing between items */
+      align-items: center; /* Center-align lists */
+  }
+
+  .menu ul{
+    padding: 0;
+  }
+  .menu li {
+      padding: 5px 0; /* Adjust padding for menu items */
+      text-align: center; /* Center-align menu items */
+
+  }
+
+  .menu-credit {
+      flex-direction: column; /* Stack credit items vertically */
+      gap: 10px; /* Add spacing between credit sections */
+      text-align: center; /* Center-align text */
+  }
+
+  .credits {
+      /* padding: 10px; Reduce padding for mobile */
+      align-self: center;
+  }
+}

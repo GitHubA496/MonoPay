@@ -1,0 +1,112 @@
+/* Container for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 1px 6px #262626; 
+  }
+  
+  
+  .navbar img {
+    height: 50px; 
+    left: -5px;
+  }
+  
+  
+  .navbarList {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+  }
+  
+  
+  .navbarList li {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for navbar items */
+  .navbarList a:hover {
+    color: #e3d954; /* Blue color for hover effect */
+  }
+
+
+  .navbarList li.active {
+    background: linear-gradient(63.68deg, #ADA785 0%, #D6D3C2 100%); /* Highlighted text color */
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: color 0.3s ease-in-out;
+    -webkit-text-fill-color: transparent;
+  }
+  .Centre{
+    display: flex;
+    gap: 20px;
+  }
+  /* Container for 'Get Monopay' */
+  .Monopay {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    cursor: pointer;
+    border: 3px solid #ffffff;
+    border-radius: 60px;
+    padding: 2px 2px;
+    margin: -3px;
+  }
+  
+  /* Styling for the Monopay logo */
+  .Monopay img {
+    height: 15px; /* Smaller size for the 'Get Monopay' logo */
+  }
+  
+  /* Optional: Make the 'Get Monopay' text bold */
+  .Monopay li {
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(63.68deg, #ADA785 0%, #D6D3C2 100%); /* Highlighted text color */
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: color 0.3s ease-in-out;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Hover effect for 'Get Monopay' text */
+  .Monopay li:hover {
+    background: linear-gradient(63.68deg, #7975b3 0%, #5762c9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: color 0.3s ease-in-out;
+    -webkit-text-fill-color: transparent;
+  }
+  
+a:link, a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+  @media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbarList li {
+        font-size: 14px;
+    }
+
+    .Monopay {
+        padding: 4px 8px;
+        gap: 5px;
+    }
+
+    .Monopay li {
+        font-size: 12px;
+    }
+}
